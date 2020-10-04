@@ -47,4 +47,21 @@ exports.addMhs = function(req, res){
             }
         }
     );
+};
+
+exports.editMhs = function(req, res){
+    let npm = req.body.npm;
+    let nama = req.body.nama;
+    let jk = req.body.jk;
+    let nohp = req.body.nohp;
+
+    connecti.query('UPDATE tbl_mhs SET nama=?,jk=?,nohp=? WHERE npm=?', [nama, jk, nohp, npm],
+        function(error, rows, fields){
+            if(error){
+                connecti.log(error);
+            }else{
+                response.ok('Edit data mhs success !', res);
+            }
+        }
+    );
 }
