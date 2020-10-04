@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/kartono1102/restapi.git"
+    "url": "git+https://github.com/kartono1102/restapi.git"
   },
   "keywords": [
     "rest",
@@ -18,7 +18,7 @@
   "author": "kartono",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/kartono1102/restapi/issues"
+    "url": "https://github.com/kartono1102/restapi/issues"
   },
-  "homepage": "https://gitlab.com/kartono1102/restapi#readme"
+  "homepage": "https://github.com/kartono1102/restapi#readme"
 }
