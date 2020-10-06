@@ -64,4 +64,18 @@ exports.editMhs = function(req, res){
             }
         }
     );
-}
+};
+
+exports.hapusMhs = function(req, res){
+    let npm = req.body.npm;
+
+    connecti.query('DELETE FROM tbl_mhs WHERE npm=?', [npm],
+        function(error, rows, fields){
+            if(error){
+                connecti.log(error);
+            }else{
+                response.ok('Delete data mhs success !', res);
+            }
+        }
+    );
+};

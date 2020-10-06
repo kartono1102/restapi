@@ -8,4 +8,5 @@ module.exports = function(app){
     app.route('/getmhs/:id').get(myJson.getmhsByNpm);
     app.route('/addmhs').post(myJson.addMhs);
     app.route('/editmhs').put(myJson.editMhs);
+    app.route('/deletemhs').delete(myJson.hapusMhs);
 }
