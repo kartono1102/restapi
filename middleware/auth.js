@@ -5,6 +5,7 @@ let response = require('../rest');
 let jwt = require('jsonwebtoken');
 let config = require('../config/secret');
 let ip = require('ip');
+let verify = require('./verification');
 
 exports.registrasi = function(req, res) {
     let post = {
@@ -103,4 +104,8 @@ exports.login = function(req, res){
             }
         }
     })
+}
+
+exports.homepage = function(req, res){
+    response.ok("This page for authorized user with role 2", res);
 }
